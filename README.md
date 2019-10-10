@@ -1,11 +1,11 @@
 # pwnedOS11
-WIP iOS 11 Safari Jailbreak
+WIP iOS 11 - 12 Safari Jailbreak
 
 # TODO
 
-- patchfinder for iOS 11
-- AMFI bypass for iOS 11
-- Just patches for iOS 11
+- patchfinder for iOS 11 - 12
+- AMFI bypass for iOS 11 - 12
+- Just patches for iOS 11 - 12
 - remount
 - Tweak crap
 - Cydia stuff
