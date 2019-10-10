@@ -12,4 +12,4 @@ WIP iOS 11 Safari Jailbreak
 - Done?
 
 # Credits (will be updated if needed in future commits)
-Chr1sPwn3d
+Chr1sPwn3d, _nikslasb, Ian Beer
