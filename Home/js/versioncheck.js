@@ -10,7 +10,7 @@ var match = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
        parseInt(match[3] || 0, 10)
    ];
    return parseFloat(version[0]+'.'+version[1]+version[2]);
-     if(parseFloat() > 12.4)
+     if(parseFloat() > 12.2)
      {
 
 window.alert("Error, Unsupported Firmware");
