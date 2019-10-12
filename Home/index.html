@@ -1,17 +1,18 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-  <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
         <h1>pwnedOS11</h1>
 <h2>A Safari JailbreakME for iOS 11 - iOS 12</h2>
 </head>
     <body>
-        <p id="gogo" onclick="myFunction() ">go</p>
+        <script src="js/go.js"></script>
+        <script src="js/versioncheck.js"></script>
         <script>
-            
-            function myFunction() {
-            document.getElementById("gogo").innerHTML = "Starting...";
+            function start() {
+                checkVer()
             }
-        </script>
+                 </script>
+        <center id="gogo"><a href="javascript:start()"><p>go</p></a></center>
     </body>
 </html>
