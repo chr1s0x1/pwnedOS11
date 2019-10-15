@@ -34,7 +34,17 @@
                 }else if(exploitByOS == 12)
                 {
                     document.body.innerHTML("<h4>Running Exploit..</h4>");
-                    ready.then(function());                
+                    ready.then(function() {
+    try {
+        pwn();
+    } catch (e) {
+        print("[-] Exception caught: " + e);
+        ws_log.send("Connection closed!");
+        ws_log.close();
+    }
+}).catch(function(err) {
+    print("[-] Initialization failed");
+});               
                 }
                                                                      
             }
