@@ -1,5 +1,5 @@
 # pwnedOS11
-WIP iOS 11 - 12 Safari Jailbreak
+WIP iOS 11 - 12.1.1 Safari Jailbreak
 
 ## TODO (Not in order)
 
