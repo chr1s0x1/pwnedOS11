@@ -9,7 +9,6 @@
                      document.body.innerHTML = "<h4>Device is on iOS 12..</h4>";
                  exploitByOS = 12;
              }else if (/\b11_\S+ like Mac OS X/.test(navigator.userAgent)) {
-                 // Saying 11.3.1 draws an error
                  document.body.innerHTML = "<h4>Device is on iOS 11..</h4>";
                  exploitByOS = 11;
              }else {
