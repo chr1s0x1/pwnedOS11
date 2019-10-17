@@ -1,14 +1,14 @@
 
 // Get user agent to determine what exploit to use...
 // WIP
-             function uAgent() {
+             function DetermineExploit() {
                  // Will store iOS version (if ios 11 or 12)
                  var exploitByOS;
                  
-                 if (/\b12_\S+ like Mac OS X/.test(navigator.userAgent))
+                 if (iOSVersion() > '11')
                      document.body.innerHTML = "<h4>Device is on iOS 12..</h4>";
                  exploitByOS = 12;
-             }else if (/\b11_\S+ like Mac OS X/.test(navigator.userAgent)) {
+             }else if (iOSVersion() < '12') {
                  document.body.innerHTML = "<h4>Device is on iOS 11..</h4>";
                  exploitByOS = 11;
              }else {
