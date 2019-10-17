@@ -1,21 +1,11 @@
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
+
 // Get iOS Version
 // Credit to turnerrocks1 (@turnerhackz1) for the iOSVersion() & detectBuild() functions (and separating the unsupported 
 // alerts into a function)
 function detectOSVersion() {
-<<<<<<< Updated upstream
+    
 function unsupported() {
-=======
-    // will store users device version
-    var uVersion;
-    
-    this.webkit = window.navigator.userAgent.indexOf('AppleWebKit') > -1;
-    
-    if (!/\b11_\S+ like Mac OS X/.test(navigator.userAgent) || !/\b12_\S+ like Mac OS X/.test(navigator.userAgent))
->>>>>>> Stashed changes
 window.alert("Error, Unsupported Firmware");
 window.alert("Sorry, pwnedOS11 only supports iOS 11 - 12.1.1");
 }
