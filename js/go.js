@@ -1,6 +1,6 @@
 
-// Get user agent to determine what exploit to use...
-// WIP
+// Determine what exploit to use via iOSVersion() in versioncheck.js..
+// WIP, can be improved on.
              function DetermineExploit() {
                  // Will store iOS version (if ios 11 or 12)
                  var exploitByOS;
