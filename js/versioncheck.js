@@ -7,7 +7,7 @@ function detectOSVersion() {
     
 function unsupported() {
 window.alert("Error, Unsupported Firmware");
-window.alert("Sorry, pwnedOS11 only supports iOS 11 - 12.1.1");
+window.alert("Sorry, pwnedOS11 only supports iOS 11 - 12.2 & 13b1,b2");
 }
     function iOSVersion() {
     var match = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
