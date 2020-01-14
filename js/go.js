@@ -6,10 +6,10 @@
                  var exploitByOS;
                  
                  if (iOSVersion() > '11')
-                     document.body.innerHTML = "<h4>Device is on iOS 12..</h4>";
+                     document.body.innerHTML = "<h4>Device is on iOS 11..</h4>";
                  exploitByOS = 12;
              }else if (iOSVersion() < '12') {
-                 document.body.innerHTML = "<h4>Device is on iOS 11..</h4>";
+                 document.body.innerHTML = "<h4>Device is on iOS 12..</h4>";
                  exploitByOS = 11;
              }else {
                  alert("Error, iOS version unknown, Quitting..");
