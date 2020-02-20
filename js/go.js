@@ -1,7 +1,7 @@
 
 // Determine what exploit to use via iOSVersion() in versioncheck.js..
 // WIP, can be improved on.
-             function DetermineExploit() {
+             function determineExploit() {
                
                  // Will store iOS version (if ios 11 or 12)
                  var exploitByOS;
