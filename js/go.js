@@ -14,3 +14,4 @@
                  alert("error : go.js");
                  location.reload();
              }
+}
