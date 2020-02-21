@@ -62,7 +62,11 @@ function detectBuild() {
     }
     return null;
 }
-if (iOSVersion() != supportedversions[]) {
+    var i = 0;
+    while(i < 23) {
+if (iOSVersion() != supportedversions[i]) {
     unsupported();
+    i++;
 } else {break;}
+    }
 }
