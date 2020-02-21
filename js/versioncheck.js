@@ -76,3 +76,4 @@ function detectBuild() {
     }else{
         break;
     }
+}
