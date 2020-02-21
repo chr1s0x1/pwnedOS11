@@ -42,9 +42,7 @@
                     // run iOS 12 exploit
                     pwn();
                     
-                    // We have to do iOSVersion here since a number
-                    // cant have letters in it (b)
-                }else if(iOSVersion == '13.0b1' || '13.0b2') {
+                }else if(exploitByOS == 13) {
                     document.body.innerHTML = "<h4>Device is on iOS 13 beta..</h4>";
                     document.body.innerHTML = "<h4>Running Exploit..</h4>";
                     // run iOS 13 exploit
