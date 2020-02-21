@@ -2,6 +2,37 @@
 // Credit to turnerrocks1 (@turnerhackz1) for the iOSVersion() & detectBuild() functions (and separating the unsupported 
 // alerts into a function)
 
+var supportedversions = [
+'12.1.4',
+'12.1.3',
+'12.1.2',
+'12.1.1',
+'12.1',
+'12.0.1',
+'12.0',
+'11.4.1',
+'11.4',
+'11.3.1',
+'11.3',
+'11.2.6',
+'11.2.5',
+'11.2.2',
+'11.2.1',
+'11.2',
+'11.1.2',
+'11.1.1',
+'11.1',
+'11.0.3',
+'11.0.2',
+'11.0.1',
+'11.0',
+
+];
+
+
+
+
+
 function detectOSVersion() {
     
 function unsupported() {
@@ -32,7 +63,7 @@ function detectBuild() {
     }
     return null;
 }
-if (iOSVersion() != '12.1' || iOSVersion != '12.0' || iOSVersion != '12.1.2' || iOSVersion != '12.1.4') {
-    break;
-} else {unsupported();}
+if (iOSVersion() != supportedversions[]) {
+    unsupported();
+} else {break;}
 }
