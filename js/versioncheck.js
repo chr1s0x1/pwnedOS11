@@ -32,7 +32,7 @@ function detectBuild() {
     }
     return null;
 }
-if (iOSVersion() != '12.1' || '12.0' || '12.1.2' || '12.1.4') {
+if (iOSVersion() != '12.1' || iOSVersion != '12.0' || iOSVersion != '12.1.2' || iOSVersion != '12.1.4') {
     break;
 } else {unsupported();}
 }
