@@ -35,7 +35,7 @@
              }else if(iOSVersion() == '13.0b1' || iOSVersion() == '13.0b2') {
                     exploitByOS = 13;
                     }else {
-                 window.alert("error : go.js");
+                 window.alert("error in go.js : unknown firmware");
                  location.reload();
                      }
 }
