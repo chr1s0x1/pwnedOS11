@@ -10,7 +10,6 @@
                  
                  
              document.body.innerHTML = "<h4><center>Getting iOS version..</center></h4>";
-             sleep(2);
      
     function iOSVersion() {
        var match = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
