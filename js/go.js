@@ -39,7 +39,7 @@
                      // we add a check to see if it ran..
                      var com;
                  com = window.alert("error : go.js");
-                     if(com == 1){
+                     if(com == 1 || -1){
                  window.alert("error : go.js");   
                  location.reload();
                      }
