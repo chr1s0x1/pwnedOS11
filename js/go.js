@@ -2,7 +2,7 @@
 
 
 // Determine what exploit to use via iOSVersion() in versioncheck.js..
-// WIP, can be improved on. 
+// WIP, can be improved on.
 
 // -------------------------------------------------------------------------------//
 
@@ -35,7 +35,7 @@
              }else if(iOSVersion() == '13.0b1' || iOSVersion() == '13.0b2') {
                     exploitByOS = 13;
                     }else {
-                 window.alert("error : go.js");   
+                 window.alert("error : go.js");
                  location.reload();
                      }
 }
