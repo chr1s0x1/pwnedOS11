@@ -10,4 +10,4 @@ WIP iOS 11 - 12.2 & 13b1,b2 Safari Jailbreak
 - Done?
 
 # Credits (will be updated if needed in future commits)
-Chr1sPwn3d (main Developer), turnerhackz1 (main Developer), _nikslasb, Ian Beer (multi_path), Sem Voigtländer, Ned Williamson (SockPuppet), Umang Raghuvanshi (SockPuppet3)
+Chr1s0x1 (main Developer), turnerhackz1 (main Developer), _nikslasb, Ian Beer (multi_path), Sem Voigtländer, Ned Williamson (SockPuppet), Umang Raghuvanshi (SockPuppet3)
