@@ -28,28 +28,24 @@
                 // go.js
                 determineExploit();
                 
-                // I added some sleeps to give pwnedOS11 a little rest before starting the mayhem lol. 
-                
                 // Determine what exploit to use, based on var exploitByOS's value
                 if(exploitByOS == 11) {
-                    document.body.innerHTML = "<h4> Device is on iOS 11..</h4>";
-                    sleep(10);
-                    document.body.innerHTML = "<h4>Running Exploit..</h4>";
                     
+                    document.body.innerHTML = "<h4> Device is on iOS 11..</h4>";
+                    document.body.innerHTML = "<h4>Running Exploit..</h4>";
                     // run iOS 11 exploit
                     go();
+                    
                 }else if(exploitByOS == 12)
                 {
                     document.body.innerHTML = "<h4>Device is on iOS 12..</h4>";
-                    sleep(10);
                     document.body.innerHTML = "<h4>Running Exploit..</h4>";
-                    
                     // run iOS 12 exploit
                     pwn();
+                    
                 }else {
-                    alert("error, couldn't get iso version.. mayhem canceled");
+                    window.alert("error, couldn't get iso version.. mayhem canceled");
                     location.reload();
-                    return 1;
                 }
                                                                      
             }

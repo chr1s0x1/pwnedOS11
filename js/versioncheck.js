@@ -1,8 +1,7 @@
-
-
 // Get iOS Version
 // Credit to turnerrocks1 (@turnerhackz1) for the iOSVersion() & detectBuild() functions (and separating the unsupported 
 // alerts into a function)
+
 function detectOSVersion() {
     
 function unsupported() {
