@@ -25,7 +25,7 @@ var supportedversions = [
 '11.0.3',
 '11.0.2',
 '11.0.1',
-'11.0'
+'11.0',
 ];
 
 
@@ -62,11 +62,17 @@ function detectBuild() {
     }
     return null;
 }
+    // pass through supportedversions array and see if iOSVersion() matches
+    // up with any of them..
+    
+    document.body.innerHTML = "Checking Compatibility..";
     var i = 0;
-    while(i < 23) {
-if (iOSVersion() != supportedversions[i]) {
-    unsupported();
-    i++;
-} else {break;}
+    var result;
+    while(i < 22){
+        result = iOSVersion() == supportedversions[i];
+        i++;
+    }if(result == 1 || result == -1){
+        unsupported();
+    }else{
+        break;
     }
-}
