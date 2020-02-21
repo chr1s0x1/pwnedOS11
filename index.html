@@ -23,6 +23,7 @@
                   function start()
             {
                 document.body.innerHTML = "<h4><center>Starting..</center></h4>";
+                sleep(2000);
                
                 
                 // go.js
@@ -30,20 +31,26 @@
                 
                 // Determine what exploit to use, based on var exploitByOS's value
                 if(exploitByOS == 11) {
-                    
                     document.body.innerHTML = "<h4> Device is on iOS 11..</h4>";
                     document.body.innerHTML = "<h4>Running Exploit..</h4>";
                     // run iOS 11 exploit
                     go();
                     
-                }else if(exploitByOS == 12)
-                {
+                }else if(exploitByOS == 12) {
                     document.body.innerHTML = "<h4>Device is on iOS 12..</h4>";
                     document.body.innerHTML = "<h4>Running Exploit..</h4>";
                     // run iOS 12 exploit
                     pwn();
                     
-                }else {
+                    // We have to do iOSVersion here since a number
+                    // cant have letters in it (b)
+                }else if(iOSVersion == '13.0b1' || '13.0b2') {
+                    document.body.innerHTML = "<h4>Device is on iOS 13 beta..</h4>";
+                    document.body.innerHTML = "<h4>Running Exploit..</h4>";
+                    // run iOS 13 exploit
+                    pwn();
+                    
+                }else{
                     window.alert("error, couldn't get iso version.. mayhem canceled");
                     location.reload();
                 }

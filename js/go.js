@@ -33,7 +33,10 @@
                  exploitByOS = 11;
              }else if (iOSVersion() == '12.0') {
                  exploitByOS = 12;
-             }else {
+             }
+             else if(iOSVersion() == '13.0b1' || '13.0b2') {
+                    exploitByOS = 13;
+                    }else {
                  window.alert("error : go.js");
                  location.reload();
              }
