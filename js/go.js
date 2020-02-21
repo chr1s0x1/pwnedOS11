@@ -2,14 +2,22 @@
 
 
 // Determine what exploit to use via iOSVersion() in versioncheck.js..
-// WIP, can be improved on. -
+// WIP, can be improved on. 
 
+// -------------------------------------------------------------------------------//
+
+    function determineExploit() {
+                 
+                 
+             document.body.innerHTML = "<h4><center>Getting iOS version..</center></h4>";
+             sleep(2);
+     
     function iOSVersion() {
-    var match = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
-        version;
+       var match = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+           version;
 
-    if (match !== undefined && match !== null) {
-        version = [
+       if (match !== undefined && match !== null) {
+           version = [
             parseInt(match[1], 10),
             parseInt(match[2], 10),
             parseInt(match[3] || 0, 10)
@@ -18,14 +26,6 @@
     }
     return false;
 }
-
-// -------------------------------------------------------------------------------//
-
-    function determineExploit() {
-                 
-                 
-             document.body.innerHTML = "<h4><center>Getting iOS version..</center></h4>";
-                 
                  // Will store iOS version (if ios 11 or 12)
                  var exploitByOS = 0;
                  
@@ -36,7 +36,13 @@
              }else if(iOSVersion() == '13.0b1' || '13.0b2') {
                     exploitByOS = 13;
                     }else {
-                 alert("error : go.js");
+                     // The alert doesn't always run when reloading the page, so
+                     // we add a check to see if it ran..
+                     var com;
+                 com = window.alert("error : go.js");
+                     if(com == 1){
+                 window.alert("error : go.js");   
                  location.reload();
+                     }
              }
 }
