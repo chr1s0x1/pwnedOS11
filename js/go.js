@@ -12,10 +12,10 @@
                  // Will store iOS version (if ios 11 or 12)
                  var exploitByOS = 0;
                  
-                 if (iOSVersion() > '11.0') {
-                 exploitByOS = 12;
-             }else if (iOSVersion() < '12.0') {
+                 if (iOSVersion() == '11.0') {
                  exploitByOS = 11;
+             }else if (iOSVersion() == '12.0') {
+                 exploitByOS = 12;
              }else {
                  window.alert("error : go.js");
                  location.reload();
