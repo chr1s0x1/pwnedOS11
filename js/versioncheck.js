@@ -71,7 +71,7 @@ function detectOSVersion() {
             break;
         }
     }
-    if(i => 22) {
+    if(i >= 22) {
         unsupported();
     }
     
