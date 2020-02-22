@@ -2,7 +2,7 @@
 // Credit to turnerrocks1 (@turnerhackz1) for the iOSVersion() & detectBuild() functions (and separating the unsupported 
 // alerts into a function)
 
-var supportedversions = [
+var versionsArray = [
 '12.1.4',
 '12.1.3',
 '12.1.2',
@@ -63,14 +63,11 @@ function detectOSVersion() {
         }
         return null;
     }
-    int i = 0;
-    while(i < 22) {
-        if(iOSVersion() != supportedversions[i]){
-            i++;
-        }else{
-            break;
-        }
-    }
+// pass through versionArray to check if ver (iOSVersion)
+// is equal to any of them. We assume if i >= 22 that 
+// the iOS version is unsupported. 
+let ver = iOSVersion();
+    const i = versionsArray.filter(v >= v !== ver).length;
     if(i >= 22) {
         unsupported();
     }
