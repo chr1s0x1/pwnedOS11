@@ -33,46 +33,48 @@ var supportedversions = [
 
 
 function detectOSVersion() {
-    
-function unsupported() {
-window.alert("Error, Unsupported Firmware");
-window.alert("Sorry, pwnedOS11 only supports iOS 11 - 12.2 & 13b1,b2");
-}
-    function iOSVersion() {
-    var match = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
-        version;
 
-    if (match !== undefined && match !== null) {
-        version = [
-            parseInt(match[1], 10),
-            parseInt(match[2], 10),
-            parseInt(match[3] || 0, 10)
-        ];
-        return parseFloat(version.join('.'));
-    }
-    return false;
-}
-//Algorithm for detecting the iOS Firmware build version using the userAgent
-function detectBuild() {
-    var tmp = navigator.userAgent.indexOf('Mobile/') > -1;
-    if(tmp) {
-        tmp = navigator.userAgent.split('Mobile/');
-        if(tmp.length<1) return null;
-        return alert(tmp[1].split(' ')[0]);
-    }
-    return null;
-}
-    // pass through supportedversions array and see if iOSVersion() matches
-    // up with any of them..
     
-    document.body.innerHTML = "Checking Compatibility..";
-    var i = 0;
-    var result;
-    while(i < 22){
-        result = iOSVersion() == supportedversions[i];
-        i++;
-    }if(result == 1 || result == -1){
-        unsupported();
-    }else{
-        break;
+    function unsupported() {
+    window.alert("Error, Unsupported Firmware");
+    window.alert("Sorry, pwnedOS11 only supports iOS 11 - 12.2 & 13b1,b2");
     }
+        function iOSVersion() {
+        var match = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+            version;
+
+        if (match !== undefined && match !== null) {
+            version = [
+                parseInt(match[1], 10),
+                parseInt(match[2], 10),
+                parseInt(match[3] || 0, 10)
+            ];
+            return parseFloat(version.join('.'));
+        }
+        return false;
+    }
+    //Algorithm for detecting the iOS Firmware build version using the userAgent
+    function detectBuild() {
+        var tmp = navigator.userAgent.indexOf('Mobile/') > -1;
+        if(tmp) {
+            tmp = navigator.userAgent.split('Mobile/');
+            if(tmp.length<1) return null;
+            return alert(tmp[1].split(' ')[0]);
+        }
+        return null;
+    }
+    int i = 0;
+    while(i < 22) {
+        if(iOSVersion() != supportedversions[i]){
+            i++;
+        }else{
+            break;
+        }
+    }
+    if(i => 22) {
+        unsupported();
+    }
+    
+
+}
+
