@@ -27,15 +27,25 @@
 }
                  // Will store iOS version (if ios 11 or 12)
                  var exploitByOS = 0;
-                 
-                 if (iOSVersion() == '11.0') {
-                 exploitByOS = 11;
-             }else if (iOSVersion() == '12.0') {
-                 exploitByOS = 12;
-             }else if(iOSVersion() == '13.0b1' || iOSVersion() == '13.0b2') {
-                    exploitByOS = 13;
-                    }else {
-                 window.alert("error in go.js : unknown firmware");
-                 location.reload();
-                     }
+                 let ver = iOSVersion();
+                 var j = 0;
+        // pass through iso11ver & iso12ver arrays to see if the device is on ios 11 or 12.
+        // if i >= 16, we assume the version is unknown
+        while(j < 16) {
+            if(ver == iso11ver[j]) {
+                document.body.innerHTML = "Running iOS 11 Firmware..";
+                exploitByOS = 11;
+                break;
+            }else if(ver == iso12ver[j]) {
+                document.body.innerHTML = "Running iOS 12 Firmware..";
+                exploitByOS = 12;
+                break;
+            }else {
+                j++;
+            }
+        } if(j >= 16){
+            window.alert("error go.js : unknown firmware");
+            location.reload();
+        }
+        
 }
