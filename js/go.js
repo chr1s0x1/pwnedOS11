@@ -31,7 +31,7 @@
                  var j = 0;
         // pass through iso11ver & iso12ver arrays to see if the device is on ios 11 or 12.
         // if i >= 16, we assume the version is unknown
-        while(j < 16) {
+        while(j < iso11ver.length) {
             if(ver == iso11ver[j]) {
                 document.body.innerHTML = "Running iOS 11 Firmware..";
                 exploitByOS = 11;
