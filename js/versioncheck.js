@@ -72,18 +72,15 @@ function detectOSVersion() {
 // the iOS version is unsupported. 
 let ver = iOSVersion();
  var i = 0;
-    while (i < 22){
+     if(i < 22){
         if(ver != sVersions[i]){
             i++;
         }else{
             break;
         }
+    }else{
+         unsupported();
     }
-    if(i > 22) {
-        unsupported();
-    }
-    
-
 }
 
 
