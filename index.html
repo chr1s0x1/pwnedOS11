@@ -15,6 +15,11 @@
              <script src="js/go.js"></script>
              <script src="exploit/WebkitExploit/pwn.js"></script>
              <script src="exploit/WebkitExploit12/pwn.js"></script>
+             <script src="exploit/WebkitExploit/utils.js"></script>
+             <script src="exploit/WebkitExploit/int64.js"></script>
+             <script src="exploit/WebkitExploit12/utils.js"></script>
+             <script src="exploit/WebkitExploit12/int64.js"></script>
+    
              <script>
                  
                  
@@ -32,22 +37,28 @@
                 // Determine what exploit to use, based on var exploitByOS's value
                 if(exploitByOS == 11) {
                     document.body.innerHTML = "<h4> Device is on iOS 11..</h4>";
+                    sleep(2);
                     document.body.innerHTML = "<h4>Running Exploit..</h4>";
+                    
                     // run iOS 11 exploit
                     go();
                     
                 }else if(exploitByOS == 12) {
                     document.body.innerHTML = "<h4>Device is on iOS 12..</h4>";
+                    sleep(2);
                     document.body.innerHTML = "<h4>Running Exploit..</h4>";
+                    
                     // run iOS 12 exploit
-                    pwn();
+                    exploit();
                     
 
                 }else if(exploitByOS == 13) {
                     document.body.innerHTML = "<h4>Device is on iOS 13 beta..</h4>";
+                    sleep(2);
                     document.body.innerHTML = "<h4>Running Exploit..</h4>";
+                    
                     // run iOS 13 exploit
-                    pwn();
+                    exploit();
                     
                 } else{
                     window.alert("error, couldn't get iso version.. mayhem canceled");
