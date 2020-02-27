@@ -6,6 +6,8 @@
 // This array is messy.......
 // ( supported versions )
 var sVersions = [
+'13.0b1',
+'13.0b2',
 '12.2',
 '12.1.4',
 '12.1.3',
