@@ -1,7 +1,7 @@
 # pwnedOS11
 WIP iOS 11 - 12.2 & 13b1,b2 Safari Jailbreak
 
-## TODO (Not in order)
+## TODO
 
 - remount (plan on using Elysian's)
 - amfid patching (plan on using Elysian's)
