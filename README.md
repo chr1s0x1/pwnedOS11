@@ -3,10 +3,12 @@ WIP iOS 11 - 12.2 & 13b1,b2 Safari Jailbreak
 
 ## TODO (Not in order)
 
-- patches for iOS 11 - 12
-- remount
-- Tweak stuff
-- Cydia stuff
+- remount (plan on using Elysian's)
+- amfid patching (plan on using Elysian's)
+- SSH
+- Code Injection
+- Injection Library (Substitute)
+- Bootstrap (Binaries etc.)
 - Done?
 
 # Credits (will be updated if needed in future commits)
